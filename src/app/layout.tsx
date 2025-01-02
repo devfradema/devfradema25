@@ -14,6 +14,8 @@ import { themeOverrides } from 'src/theme/theme-overrides';
 import { Poppins } from 'next/font/google';
 import { APP_NAME, APP_DESCRIPTION, SERVER_URL } from 'lib/constants';
 
+import { SpeedInsights } from '@vercel/speed-insights/next';
+
 import { ProgressBar } from 'src/components/progress-bar';
 import { MotionLazy } from 'src/components/animate/motion-lazy';
 import { SettingsDrawer, defaultSettings, SettingsProvider } from 'src/components/settings';
@@ -73,6 +75,7 @@ export default async function RootLayout({ children }: Props) {
                   <ProgressBar />
                   <SettingsDrawer defaultSettings={defaultSettings} />
                   {children}
+                  <SpeedInsights />
                 </MotionLazy>
               </ThemeProvider>
             </AppRouterCacheProvider>
