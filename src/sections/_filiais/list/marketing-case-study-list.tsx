@@ -17,11 +17,11 @@ type Props = BoxProps & {
 };
 
 export function MarketingCaseStudyList({ caseStudies, sx, ...other }: Props) {
-  const [currentTab, setCurrentTab] = useState('All');
+  const [currentTab, setCurrentTab] = useState('Todas');
 
   const getCategories = caseStudies.map((project) => project.category);
 
-  const categories = ['All', ...Array.from(new Set(getCategories))];
+  const categories = ['Todas', ...Array.from(new Set(getCategories))];
 
   const dataFiltered = applyFilter({ inputData: caseStudies, query: currentTab });
 

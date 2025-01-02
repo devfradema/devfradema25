@@ -8,7 +8,6 @@ import Typography from '@mui/material/Typography';
 
 import { _testimonials, _marketingPosts } from 'src/_mock';
 
-import { MarketingNewsletter } from '../marketing-newsletter';
 import { MarketingLatestPosts } from '../posts/marketing-latest-posts';
 import { MarketingCaseStudyList } from '../list/marketing-case-study-list';
 
@@ -46,8 +45,6 @@ export function MarketingCaseStudiesView({ caseStudies }: Props) {
       </Box>
 
       <MarketingLatestPosts posts={latestPosts} />
-
-      <MarketingNewsletter />
     </>
   );
 }
