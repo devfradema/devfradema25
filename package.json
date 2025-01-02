@@ -52,7 +52,7 @@
     "@radix-ui/react-slot": "^1.1.1",
     "@supabase/ssr": "^0.5.2",
     "@supabase/supabase-js": "^2.47.10",
-    "@typebot.io/js": "0.3.22",
+    "@typebot.io/js": "^0.3.37",
     "@typebot.io/nextjs": "0.3.22",
     "@vercel/speed-insights": "^1.1.0",
     "@vis.gl/react-google-maps": "^1.4.2",
