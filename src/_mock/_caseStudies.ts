@@ -17,10 +17,10 @@ const TITLES = [
 ];
 
 const CONTENT = `
-<h4>Project brief</h4>
+<h4>A Filial</h4>
 <p>Nullam tincidunt adipiscing enim. Mauris sollicitudin fermentum libero. Pellentesque auctor neque nec urna. Sed fringilla mauris sit amet nibh. Phasellus viverra nulla ut metus varius laoreet.</p>
 
-<h4>How we work</h4>
+<h4>Forma de trabalho</h4>
 <p>Nullam tincidunt adipiscing enim. Mauris sollicitudin fermentum libero. Pellentesque auctor neque nec urna. Sed fringilla mauris sit amet nibh. Phasellus viverra nulla ut metus varius laoreet.</p>
 <ul>
     <li>Medical Assistant</li>
@@ -30,7 +30,7 @@ const CONTENT = `
     <li>President of Sales</li>
 </ul>
 
-<h4>Results</h4>
+<h4>Resultados</h4>
 <p>Nullam tincidunt adipiscing enim. Mauris sollicitudin fermentum libero. Pellentesque auctor neque nec urna. Sed fringilla mauris sit amet nibh. Phasellus viverra nulla ut metus varius laoreet.</p>
 <ul>
     <li>Medical Assistant</li>
@@ -63,8 +63,7 @@ export const _caseStudies = TITLES.map((_, index) => ({
   heroUrl: `${CONFIG.assetsDir}/assets/images/marketing/marketing-large-1.webp`,
   how_we_work:
     'Nullam tincidunt adipiscing enim. Mauris sollicitudin fermentum libero. Pellentesque auctor neque nec urna. Sed fringi',
-  results:
-    'Nullam tincidunt adipiscing enim. Mauris sollicitudin fermentum libero. Pellentesque auctor neque nec urna. Sed fringi',
+  results: 'Pellentesque auctor neque nec urna. Sed fringi',
   category: getCategory(index),
   galleryImgs: getGalleryImgs(),
 }));

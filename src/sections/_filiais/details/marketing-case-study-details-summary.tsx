@@ -9,9 +9,6 @@ import IconButton from '@mui/material/IconButton';
 
 import { _socials } from 'src/_mock';
 import { TwitterIcon, FacebookIcon, LinkedinIcon, InstagramIcon } from 'src/assets/icons';
-import { locale } from 'dayjs';
-import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
-import { MonthCalendar } from '@mui/x-date-pickers/MonthCalendar';
 
 // ----------------------------------------------------------------------
 
