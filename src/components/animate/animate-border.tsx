@@ -241,7 +241,7 @@ const MovingBorder = forwardRef<HTMLSpanElement, MovingBorderProps>((props, ref)
 
 // ----------------------------------------------------------------------
 
-function useComputedElementStyles(theme: Theme, ref: React.RefObject<HTMLSpanElement>) {
+function useComputedElementStyles(theme: Theme, ref: React.RefObject<HTMLSpanElement | null>) {
   const [computedStyles, setComputedStyles] = useState<CSSObject | null>(null);
 
   const isRtl = theme.direction === 'rtl';

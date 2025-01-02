@@ -8,7 +8,7 @@ import type { Theme, SxProps, CSSObject } from '@mui/material/styles';
  */
 export type NavItemRenderProps = {
   navIcon?: Record<string, React.ReactNode>;
-  navInfo?: (val: string) => Record<string, React.ReactElement>;
+  navInfo?: (val: string) => Record<string, React.ReactElement<any>>;
 };
 
 export type NavItemStateProps = {

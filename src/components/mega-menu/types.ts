@@ -12,7 +12,7 @@ import type { CarouselOptions } from '../carousel';
  */
 export type NavItemRenderProps = {
   navIcon?: Record<string, React.ReactNode>;
-  navInfo?: (val: string) => Record<string, React.ReactElement>;
+  navInfo?: (val: string) => Record<string, React.ReactElement<any>>;
 };
 
 export type NavItemStateProps = {
@@ -93,7 +93,7 @@ export type NavListProps = Pick<NavItemProps, 'render' | 'enabledRootRedirect'> 
   data: NavItemDataProps;
   slotProps?: NavSlotProps;
   slots?: {
-    button?: React.ReactElement;
+    button?: React.ReactElement<any>;
     topArea?: React.ReactNode;
     bottomArea?: React.ReactNode;
   };
