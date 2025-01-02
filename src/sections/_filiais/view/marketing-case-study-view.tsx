@@ -76,7 +76,7 @@ export function MarketingCaseStudyView({ caseStudy, relatedCaseStudies, sx, ...o
       {!!relatedCaseStudies?.length && (
         <MarketingCaseStudyListSimilar caseStudies={relatedCaseStudies} />
       )}
-
+      <MarketingLandingFreeSEO />
       <MarketingNewsletter />
     </>
   );

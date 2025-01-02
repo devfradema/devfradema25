@@ -7,8 +7,7 @@ import { MarketingCaseStudyView } from 'src/sections/_filiais/view/marketing-cas
 
 // ----------------------------------------------------------------------
 
-export default async function Page(props: Params) {
-  const params = await props.params;
+export default async function Page({ params }: Params) {
   const data = await fetchCaseStudy(params.id);
 
   return <MarketingCaseStudyView caseStudy={data} relatedCaseStudies={_caseStudies.slice(0, 3)} />;
@@ -27,7 +26,7 @@ async function fetchCaseStudy(paramId: string) {
 }
 
 type Params = {
-  params: Promise<{ id: string }>;
+  params: { id: string };
 };
 
 /**
@@ -45,8 +44,7 @@ export async function generateStaticParams() {
  * https://nextjs.org/docs/app/building-your-application/optimizing/metadata#dynamic-metadata
  */
 
-export async function generateMetadata(props: Params): Promise<Metadata> {
-  const params = await props.params;
+export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const data = await fetchCaseStudy(params?.id);
 
   return {
